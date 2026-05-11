@@ -1,3 +1,58 @@
+@base_url = http://localhost:5000
 
+### Create a Job
+POST {{base_url}}/api/jobs
+Content-Type: application/json
 
-GET  http://localhost:5179/
+{
+  "title": "Senior Backend Engineer",
+  "description": "Building the future of ATS",
+  "location": "Remote"
+}
+
+### List Jobs
+GET {{base_url}}/api/jobs?status=Open
+
+### Apply for a Job (Public)
+POST {{base_url}}/api/jobs/1/applications
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "coverLetter": "I love C#!"
+}
+
+### Get Application Profile (Team Member Only)
+GET {{base_url}}/api/applications/1
+X-Team-Member-Id: 1
+
+### Update Stage (Team Member Only)
+PATCH {{base_url}}/api/applications/1/stage
+Content-Type: application/json
+X-Team-Member-Id: 1
+
+{
+  "targetStage": "Screening",
+  "comment": "Resume looks great."
+}
+
+### Add a Note
+POST {{base_url}}/api/applications/1/notes
+Content-Type: application/json
+X-Team-Member-Id: 1
+
+{
+  "type": "General",
+  "description": "Very enthusiastic during the screen."
+}
+
+### Set Culture Fit Score
+PUT {{base_url}}/api/applications/1/scores/culture-fit
+Content-Type: application/json
+X-Team-Member-Id: 2
+
+{
+  "score": 5,
+  "comment": "Perfect match for our values."
+}
