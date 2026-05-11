@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AihrlyATSGeneralAPI", "AihrlyATSGeneralAPI\AihrlyATSGeneralAPI.csproj", "{19657DFB-D455-490E-AD29-C9FF9E1D0F41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AihrlyATS.Tests", "AihrlyATS.Tests\AihrlyATS.Tests.csproj", "{3D21CE66-7F33-46B4-87A7-F0DCF5765429}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{19657DFB-D455-490E-AD29-C9FF9E1D0F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19657DFB-D455-490E-AD29-C9FF9E1D0F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19657DFB-D455-490E-AD29-C9FF9E1D0F41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D21CE66-7F33-46B4-87A7-F0DCF5765429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D21CE66-7F33-46B4-87A7-F0DCF5765429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D21CE66-7F33-46B4-87A7-F0DCF5765429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D21CE66-7F33-46B4-87A7-F0DCF5765429}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
